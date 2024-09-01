@@ -1,0 +1,12 @@
+[submodule "Redes de computadores/sockets-client-server"]
+	path = Redes de computadores/sockets-client-server
+	url = https://github.com/Marco-Antonio-Rodrigues/sockets-client-server
+[submodule "Computação gráfica/missile-command-3d"]
+	path = Computação gráfica/missile-command-3d
+	url = https://github.com/Marco-Antonio-Rodrigues/missile-command-3d
+[submodule "Computação gráfica/missile-command"]
+	path = Computação gráfica/missile-command
+	url = https://github.com/Marco-Antonio-Rodrigues/missile-command
+[submodule "Linguagens formais e autômatos/LFA"]
+	path = Linguagens formais e autômatos/LFA
+	url = https://github.com/Marco-Antonio-Rodrigues/LFA
