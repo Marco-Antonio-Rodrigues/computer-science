@@ -1,0 +1,12 @@
+- listas
+[x,xs] onde x é a cabeça da lista e xs a calda
+head [1,2,3] -> imprime a cabeça 1
+tail [1,2,3] -> imprime o rabo 2 3 
+1[]->[1]: adiciona 1 a uma lista vazia
+lista vazia: []
+lista de inteiros: [1,2,3]
+lista de caracteres: ["a","b","c"]
+lista de booleanos: [True,False,True]
+
+tuplas
+tupla vazia: <> 
