@@ -1,0 +1,16 @@
+1
+511354
+marco
+85994189459
+marco@gmail.com
+1230
+rua_sebastiao
+638888
+2
+17
+estrutura_de_dados
+10.00
+18
+laboratorio_de_programacao
+9.00
+511355
