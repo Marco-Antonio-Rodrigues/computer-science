@@ -1,0 +1,25 @@
+<!-- Crie uma função que adiciona um novo elemento <li> a uma lista <ul> com o id 
+    "lista", contendo o texto "Novo Item".  -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Adicionar Item</title>
+</head>
+<body>
+    <ul id="lista">
+        <li>Item 1</li>
+        <li>Item 2</li>
+    </ul>
+    <button onclick="adicionarItem()">Adicionar Item</button>
+
+    <script>
+        function adicionarItem() {
+            const lista = document.getElementById('lista');
+            const novoItem = document.createElement('li');
+            novoItem.innerText = "Novo Item";
+            lista.appendChild(novoItem);
+        }
+    </script>
+</body>
+</html>

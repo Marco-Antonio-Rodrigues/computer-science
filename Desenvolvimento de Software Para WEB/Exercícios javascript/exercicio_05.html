@@ -1,0 +1,19 @@
+<!-- Crie uma função que altera o texto de um elemento HTML com o id "titulo" 
+para "Olá, Mundo!".  -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Alterar Texto</title>
+</head>
+<body>
+    <h1 id="titulo">Texto original</h1>
+    <button onclick="alterarTexto()">Alterar Texto</button>
+
+    <script>
+        function alterarTexto() {
+            document.getElementById('titulo').innerText = "Olá, Mundo!";
+        }
+    </script>
+</body>
+</html>

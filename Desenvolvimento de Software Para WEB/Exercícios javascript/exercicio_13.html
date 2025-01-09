@@ -1,0 +1,22 @@
+<!-- Crie uma função que recebe o valor de um input com o id "entrada" e exibe o
+dobro desse valor em um elemento HTML com o id "resultado". -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dobrar Valor</title>
+</head>
+<body>
+    <input type="number" id="entrada" placeholder="Digite um número">
+    <button onclick="exibirDobro()">Exibir Dobro</button>
+    <div id="resultado"></div>
+
+    <script>
+        function exibirDobro() {
+            const valor = document.getElementById('entrada').value;
+            const dobro = valor * 2;
+            document.getElementById('resultado').innerText = `Dobro: ${dobro}`;
+        }
+    </script>
+</body>
+</html>

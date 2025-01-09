@@ -1,0 +1,32 @@
+Crie uma função que altera a cor de fundo de um elemento HTML com o id
+"container" para vermelho quando o mouse passar sobre ele e volta para a cor
+original quando o mouse sair.
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Alterar Cor de Fundo</title>
+    <style>
+        #container {
+            width: 200px;
+            height: 200px;
+            background-color: lightgray;
+        }
+    </style>
+</head>
+<body>
+    <div id="container" 
+         onmouseover="mudarParaVermelho()" 
+         onmouseout="voltarCorOriginal()"></div>
+
+    <script>
+        function mudarParaVermelho() {
+            document.getElementById('container').style.backgroundColor = 'red';
+        }
+
+        function voltarCorOriginal() {
+            document.getElementById('container').style.backgroundColor = 'lightgray';
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!-- Crie uma página contendo 3 botões (Pequena, Média e Grande) e uma imagem.
+Ao clicar no botão Pequena, altere o tamanho da imagem para 100x100px. Ao
+clicar no botão Média, altere o tamanho da imagem para 300x300px. Ao clicar
+no botão Grande, altere o tamanho da imagem para 500x500px.  -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Redimensionar Imagem</title>
+</head>
+<body>
+    <img id="imagem" src="assets/crianca.jpg" alt="Imagem" width="300">
+    <br>
+    <button onclick="alterarTamanho(100)">Pequena</button>
+    <button onclick="alterarTamanho(300)">Média</button>
+    <button onclick="alterarTamanho(500)">Grande</button>
+
+    <script>
+        function alterarTamanho(tamanho) {
+            const imagem = document.getElementById('imagem');
+            imagem.style.width = `${tamanho}px`;
+            imagem.style.height = `${tamanho}px`;
+        }
+    </script>
+</body>
+</html>

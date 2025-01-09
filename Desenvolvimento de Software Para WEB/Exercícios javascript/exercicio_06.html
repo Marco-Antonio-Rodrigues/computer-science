@@ -1,0 +1,27 @@
+<!-- Crie uma função que adiciona uma classe CSS chamado “destaque” a todos os 
+elementos da página com a classe "item".  -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Adicionar Classe</title>
+    <style>
+        .destaque {
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="item">Item 1</div>
+    <div class="item">Item 2</div>
+    <div class="item">Item 3</div>
+    <button onclick="adicionarDestaque()">Destacar</button>
+
+    <script>
+        function adicionarDestaque() {
+            const items = document.querySelectorAll('.item');
+            items.forEach(item => item.classList.add('destaque'));
+        }
+    </script>
+</body>
+</html>

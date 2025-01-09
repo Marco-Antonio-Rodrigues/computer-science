@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Agendamentos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="box modal">
+            <h2>Agende um atendimento</h2>
+            <p>Selecione data, horário e informe o nome do cliente para criar o agendamento</p>
+            <div class="container-input-data">
+                <div>
+                    <label for="data">Data</label>
+                    <input type="date" id="data" value="2024-01-10">
+                </div>
+                <div>
+                    <label for="cliente">Cliente</label>
+                    <input type="text" id="cliente" placeholder="Nome do cliente" value="Helena Souza">
+                </div>
+            </div>
+
+            <label>Horários</label>
+            <div class="horarios">
+                <label>Manhã</label>
+                <div class="horarios-turnos">
+                    <button class="active">09:00</button>
+                    <button>10:00</button>
+                    <button class="disabled">11:00</button>
+                    <button>12:00</button>
+                </div>
+                <label>Tarde</label>
+                <div class="horarios-turnos">
+                    <button class="disabled">13:00</button>
+                    <button class="disabled">14:00</button>
+                    <button>15:00</button>
+                    <button class="disabled">16:00</button>
+                    <button class="disabled">17:00</button>
+                    <button>18:00</button>
+                </div>
+
+                <label>Noite</label>
+                <div class="horarios-turnos">
+                    <button>19:00</button>
+                    <button>20:00</button>
+                    <button class="disabled">21:00</button>
+                </div>
+            </div>
+            <button class="agendar">AGENDAR</button>
+        </div>
+
+        <div class="box">
+            <h2>Agendamentos</h2>
+            <label for="dia">Visualize os agendamentos de acordo com o dia selecionado</label>
+            <input type="date" id="dia" value="2024-01-10">
+
+            <div class="agendamentos">
+                <div class="titulo">Manhã</div>
+                <div class="item">
+                    <span>11:00 - Ryan Dorwart</span>
+                    <button>&times;</button>
+                </div>
+
+                <div class="titulo">Tarde</div>
+                <div class="item">
+                    <span>13:00 - Livia Curtis</span>
+                    <button>&times;</button>
+                </div>
+                <div class="item">
+                    <span>14:00 - Randy Calzoni</span>
+                    <button>&times;</button>
+                </div>
+                <div class="item">
+                    <span>16:00 - Marley Franci</span>
+                    <button>&times;</button>
+                </div>
+                <div class="item">
+                    <span>17:00 - Jaylon Kongsgaard</span>
+                    <button>&times;</button>
+                </div>
+
+                <div class="titulo">Noite</div>
+                <div class="item">
+                    <span>21:00 - Maria Herwitz</span>
+                    <button>&times;</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

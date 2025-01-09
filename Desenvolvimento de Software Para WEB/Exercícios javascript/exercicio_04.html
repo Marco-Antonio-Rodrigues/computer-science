@@ -1,0 +1,23 @@
+<!-- Crie uma página com uma imagem de uma criança (ex: “crianca.jpg”) e um 
+botão “Crescer”. Crie uma função chamada trocarImagem. Nessa função, altere 
+a propriedade src da imagem para “adulto.jpg”. Chame a função trocarImagem 
+no onclick do botão Crescer. Escreva ainda um log no console com a mensagem 
+“Imagem trocada com sucesso!”.  -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Trocar Imagem</title>
+</head>
+<body>
+    <img id="imagem" src="assets/crianca.jpg" alt="Criança">
+    <button onclick="trocarImagem()">Crescer</button>
+
+    <script>
+        function trocarImagem() {
+            document.getElementById('imagem').src = 'assets/adulto.png';
+            console.log("Imagem trocada com sucesso!");
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!-- . Crie uma função que recebe um array de números como argumento e exibe a
+soma de todos os números em um elemento HTML com o id "resultado". -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Soma de Números</title>
+</head>
+<body>
+    <div id="resultado">Soma: </div>
+    <button onclick="calcularSoma()">Calcular Soma</button>
+
+    <script>
+        function calcularSoma() {
+            const numeros = [10, 20, 30, 40, 50];
+            const soma = numeros.reduce((acc, num) => acc + num, 0);
+            document.getElementById('resultado').innerText = `Soma: ${soma}`;
+        }
+    </script>
+</body>
+</html>

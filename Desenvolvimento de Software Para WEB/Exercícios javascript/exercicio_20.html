@@ -1,0 +1,39 @@
+<!-- Crie uma galeria com MxN miniaturas de imagens. Ao clicar em cada imagem, a
+imagem deverá aparecer ampliada em uma DIV específica da página. -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Galeria de Imagens</title>
+    <style>
+        .miniatura {
+            width: 100px;
+            cursor: pointer;
+            margin: 5px;
+        }
+        .ampliada {
+            width: 500px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="galeria">
+        <img src="assets/img1.png" class="miniatura" onclick="ampliarImagem('assets/img1.png')">
+        <img src="assets/img2.png" class="miniatura" onclick="ampliarImagem('assets/img2.png')">
+        <img src="assets/img3.png" class="miniatura" onclick="ampliarImagem('assets/img3.png')">
+    </div>
+    <div>
+        <img id="imagemAmpliada" class="ampliada" src="" alt="Imagem Ampliada">
+    </div>
+
+    <script>
+        function ampliarImagem(src) {
+            const imagem = document.getElementById('imagemAmpliada');
+            imagem.style.width = `300px`;
+            imagem.style.height = `300px`;
+            imagem.src = src;
+        }
+    </script>
+</body>
+</html>

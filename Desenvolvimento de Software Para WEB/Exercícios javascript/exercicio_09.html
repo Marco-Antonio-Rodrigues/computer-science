@@ -1,0 +1,27 @@
+<!-- Escreva uma função que recebe um número como argumento e, se o número
+for par, altera a cor de fundo de um elemento HTML com o id "par" para verde;
+caso contrário, altera para vermelho. -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Par ou Ímpar</title>
+</head>
+<body>
+    <input type="number" id="numero" placeholder="Digite um número">
+    <button onclick="verificarNumero()">Verificar</button>
+    <div id="par" style="width: 200px; height: 100px;"></div>
+
+    <script>
+        function verificarNumero() {
+            const numero = document.getElementById('numero').value;
+            const elemento = document.getElementById('par');
+            if (numero % 2 === 0) {
+                elemento.style.backgroundColor = 'green';
+            } else {
+                elemento.style.backgroundColor = 'red';
+            }
+        }
+    </script>
+</body>
+</html>

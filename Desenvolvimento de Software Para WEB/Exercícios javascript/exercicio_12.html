@@ -1,0 +1,21 @@
+<!-- Escreva uma função que altera o texto de um elemento HTML com o id
+"contador" para mostrar quantas vezes um botão com o id "botao" foi clicado. -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contador de Cliques</title>
+</head>
+<body>
+    <button id="botao" onclick="incrementar()">Clique aqui</button>
+    <div id="contador">Cliques: 0</div>
+
+    <script>
+        let cliques = 0;
+        function incrementar() {
+            cliques++;
+            document.getElementById('contador').innerText = `Cliques: ${cliques}`;
+        }
+    </script>
+</body>
+</html>

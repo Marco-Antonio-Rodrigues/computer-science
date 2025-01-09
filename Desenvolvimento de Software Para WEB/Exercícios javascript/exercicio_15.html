@@ -1,0 +1,44 @@
+<!-- Crie uma página contendo 3 miniaturas de imagens e uma div. Ao clicar em
+cada imagem, a imagem clicada deve aparecer no seu tamanho original na div.  -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Galeria de Imagens</title>
+    <style>
+        .miniatura {
+            width: 20px;
+            height: 20px;
+            object-fit: cover;
+            cursor: pointer;
+            margin: 5px;
+        }
+        #ampliada {
+            margin-top: 20px;
+            text-align: center;
+        }
+        .ampliada {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <img src="assets/img1.png" alt="Imagem 1" class="miniatura" onclick="ampliar('assets/img1.png')">
+        <img src="assets/img2.png" alt="Imagem 2" class="miniatura" onclick="ampliar('assets/img2.png')">
+        <img src="assets/img3.png" alt="Imagem 3" class="miniatura" onclick="ampliar('assets/img3.png')">
+    </div>
+    <div id="ampliada">
+        <img id="imagemAmpliada" src="" alt="Imagem Ampliada" class="ampliada" style="display: none;">
+    </div>
+
+    <script>
+        function ampliar(src) {
+            const imagemAmpliada = document.getElementById('imagemAmpliada');
+            imagemAmpliada.src = src;
+            imagemAmpliada.style.display = 'block';
+        }
+    </script>
+</body>
+</html>

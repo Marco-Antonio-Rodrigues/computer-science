@@ -1,0 +1,20 @@
+<!-- Crie uma página HTML com um cabeçalho h1 com o texto: “A mágica do 
+JavaScript”, e um botão. Ao clicar no botão, altere o texto do cabeçalho para “A 
+mágica continua!”.  -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>A mágica do JavaScript</title>
+</head>
+<body>
+    <h1 id="titulo">A mágica do JavaScript</h1>
+    <button onclick="alterarTexto()">Clique aqui</button>
+
+    <script>
+        function alterarTexto() {
+            document.getElementById('titulo').innerText = "A mágica continua!";
+        }
+    </script>
+</body>
+</html>
