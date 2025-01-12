@@ -1,0 +1,29 @@
+Q1:
+
+O objetivo é
+
+	minimizar Z = 30X1 + 48X2 + 44X3 + 56X4
+
+sujeito às restrições
+
+	6,9X1 + 8,5X2 + 9X3 + 27,1X4  = 15
+	6X1 + 11X2 + 11X2 + 14X2      >= 8
+	1100 <= 1760X1 + 1700X2 + 1056X3 + 1400X4 <= 2250
+	X1 >= 0
+	X2 >= 0
+	X3 >= 0
+	X4 >= 0
+
+Q2:
+O objetivo é
+
+	maximizar Z = 0X1 + 10X2 + 0X3 - 5X4
+
+	sueito às restrições
+
+		2X1 + 3X2 + 4X3 + 2X4 <= 500
+		3X1 + 2X2 + 1X3 + 2X4 <= 380
+		X1 >= 0
+		X2 >= 0
+		X3 >= 0
+		X4 >= 0
