@@ -1,0 +1,38 @@
+comentario: Analisar se todas as variaveis estão sendo utilizadas nas clausulas (caso contrário tentar adicionar)
+
+Algoritmo Gerador(n, m, k)
+    entrada:
+        n -> numero de variaveis
+        m -> numero de clausulas
+        k -> quantidade de literais por clausulas (para k-SAT)
+
+    saida:
+        matriz[m][k]
+
+    variaveis <- lista de 1 .. n
+    
+    matriz = []
+
+    enquanto tam(matriz) < m:
+        clausula = []
+
+        enquanto tam(clausulas) < k:
+            valor <- um item de variaveis
+
+            valor <- valor * escolha_aleatoriamente([1, -1])
+
+            se (valor) e (-1 * valor) não estiver na clausula entao
+                clausula.adicionar(valor)
+
+        se clausula não estiver na matriz entao
+            matriz.adicionar(clausula)
+
+    retorne matriz
+
+Algoritmo Solver(matriz):
+    lib <- Resolve()
+
+    para cada clausula na matriz faca
+        lib.adicionar_clausula(clausula)
+
+    retorne lib.resolva()

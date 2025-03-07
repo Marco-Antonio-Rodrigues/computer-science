@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "lógica"
+version = "0.1.0"
+description = ""
+authors = ["Marco Antonio Rodrigues Gomes de Souza <94053824+Marco-Antonio-Rodrigues@users.noreply.github.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+python-sat = "^1.8.dev14"
+ipykernel = "^6.29.5"
+matplotlib = "^3.10.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

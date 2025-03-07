@@ -1,0 +1,201 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background-color: #ccc;
+}
+
+#game {
+    position: relative;
+    text-align: initial;
+    display: flex;
+    align-items: end;
+    width: 750px;
+    height: 500px;
+    border: 1px solid #ccc;
+    margin: 0 auto;
+    overflow: hidden;
+    background-color: 	#00a2ff;
+}
+
+#earth {
+    position: relative;
+    width: 100%;  
+    height: 180px;
+    background-image: url('assets/earth.png');
+    background-repeat: no-repeat;
+}
+
+
+.rain {
+    display: none;
+    width: 300px;
+    margin-right: 50px;
+    margin-left: 10px;
+    z-index: 1;
+}
+
+.plant {
+    position: absolute;
+    bottom: 110px;
+    left: 50%;
+    width: 80px;
+    z-index: 10;
+}
+
+
+#actions button {
+    margin: 10px;
+    padding: 10px;
+    font-size: medium;
+    font-weight: 600;
+    color: brown;
+    cursor: pointer;
+}
+
+#sunflower {
+    position: relative; 
+}
+
+#counter-sunflower {
+    position: absolute;
+    top: -10px; 
+    right: -10px; 
+    background: brown;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 50%;
+    min-width: 24px;
+    text-align: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+
+#sol {
+    position: absolute;
+    width: 100px;
+    animation: sol-animation 120s linear infinite;
+}
+
+#money {
+    position: absolute;
+    margin-left: 10px;
+    top:10px;
+    color: yellow;
+    font-weight: 500;
+    font-size: 30px;
+}
+
+@keyframes sol-animation {
+    0% {
+        top: 30px;
+        right: 0px;
+    }
+    
+    50% {
+        top: -30px;
+        right: 60px;
+    }
+    
+    100% {
+        top: 30px;
+        right: 0px;
+    }
+}
+
+
+#bird {
+    position: absolute;
+    width: 100px;
+    animation: bird-animation 20s;
+    display: none;
+    z-index: 2;
+}
+
+#bird.animate {
+    display: initial;
+    animation: bird-animation 20s;
+}
+
+#bird.fall {
+    display: initial;
+    animation: fall-animation 2s;
+}
+
+@keyframes bird-animation {
+    0% {
+        top: -30px;
+        left: -30px;
+        transform: scale(0) rotateZ(0deg);
+        opacity: 0.5;
+    }
+    20% {
+        top: 100px;
+        left: 100px;
+        transform: scale(2) rotateZ(10deg);
+        opacity: 1;
+    }
+
+    30% {
+        top: 150px;
+        left: 150px;
+        transform: scale(2) rotateZ(10deg);
+        opacity: 1;
+    }
+
+    50% {
+        top: 200px;
+        left: 400px;
+        transform: scale(3) rotateZ(0deg);
+    }
+
+    70% {
+        top: 150px;
+        left: 650px;
+        transform: scale(2.5) rotateZ(-10deg);
+    }
+
+    100% {
+        top: 50px;
+        left: 900px;
+        transform: scale(1.5) rotateZ(0deg);
+        opacity: 0.5;
+    }
+}
+
+@keyframes fall-animation {
+    0% {
+        transform: translateY(0) translateX(0) rotateZ(0deg);
+        opacity: 1;
+    }
+
+    50% {
+        transform: translateY(200px) translateX(0) rotateZ(90deg);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(500px) translateX(0) rotateZ(150deg);
+        opacity: 0;
+    }
+}
+
+
+.alert-box {
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 15px 20px;
+    border-radius: 8px;
+    display: none;
+    z-index: 1000;
+}

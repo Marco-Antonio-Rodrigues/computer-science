@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo: Cultive Sua Planta</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>🌱 Green Farm 🌱</h1>
+    <p>Clique nos botões para regar a planta e dar luz solar.</p>
+    
+    <div id="game">
+        <span id="money">R$ 0,00</span>
+        <img id="sol" src="assets/sun.gif" alt="Sol" />
+        <div id="earth">
+            <img class="rain" src="assets/rain.gif" alt="rain" />
+            <img class="rain" src="assets/rain.gif" alt="rain" />
+        </div>
+        <img id="bird" src="assets/bird.gif" alt="passaro" />
+        <div id="custom-alert" class="alert-box"></div>
+    </div>
+    <footer>
+        <div id="actions">
+            <button id="sunflower">
+                🌻 Girassol (R$ 12,00)
+                <span id="counter-sunflower">0</span>
+            </button>
+            <button id="water">💧 Regar (R$ 5,00)</button>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
