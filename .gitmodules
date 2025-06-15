@@ -7,3 +7,6 @@
 [submodule "Computação gráfica/missile-command"]
 	path = Computação gráfica/missile-command
 	url = https://github.com/Marco-Antonio-Rodrigues/missile-command
+[submodule "Inteligência Artificial/resolve-rubik-cube"]
+	path = Inteligência Artificial/resolve-rubik-cube
+	url = https://github.com/dandinCode/resolve-rubik-cube.git
